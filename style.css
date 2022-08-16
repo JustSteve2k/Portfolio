@@ -58,7 +58,8 @@ body {
 
 .introSvg {
   position: absolute;
-  width: 66%;
+  /* width: 66%; */
+  width: 80rem;
   height: 40rem;
   top: 10rem;
   right: 5.5rem;
@@ -132,6 +133,8 @@ body {
 /* About Me Section */
 .aboutMe {
   background-color: black;
+  display: flex;
+  flex-direction: row;
 }
 
 .leftBackground {
@@ -139,15 +142,17 @@ body {
   left: 0rem;
   background-image: url("./img/Laptop.svg");
   height: 100%;
-  width: 25.25rem;
-  background-position: 80% 50%;
+  width: 30%;
+  /* width: 25.25rem; */
+  background-position: 90% 50%;
 }
 
 .midBackground {
   position: absolute;
-  left: 27rem;
+  left: 36rem;
   top: 1.25rem;
-  width: 37rem;
+  width: 30%;
+  /* width: 37rem; */
   height: 95%;
   border: 1px solid blue;
   border-radius: 12px;
@@ -167,7 +172,8 @@ body {
   top: 0rem;
   right: 0rem;
   height: 100%;
-  width: 54rem;
+  /* width: 54rem; */
+  width: 40%;
 }
 
 .rightBackground::before {
@@ -255,10 +261,8 @@ body {
 }
 
 .leftBoxText {
-  width: 18rem;
   height: 60%;
-  border: 1px solid black;
-  margin: 2rem auto;
+  margin: 2rem 3rem;
   line-height: 2rem;
 }
 .formBox {
@@ -316,3 +320,15 @@ body {
 .indent {
   margin-left: 1rem;
 }
+
+@media only screen and (max-width: 1700px) {
+  .introSvg {
+    width: 70rem;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .introSvg {
+    width: 60rem;
+  }
+} ;
