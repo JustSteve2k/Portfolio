@@ -1,0 +1,10 @@
+- Put image in place of resume
+- Add resume.
+- Add backgrounds
+- Add svgs.
+- Add icon
+
+ToDo
+- Correct text.
+- Work on responsiveness.
+- Make readme.md
