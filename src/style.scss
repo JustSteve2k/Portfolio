@@ -245,6 +245,17 @@ body {
   }
 }
 
+/*Css specific to an icon. */
+.htmlIcon {
+  &:hover {
+    color: red;
+    border: 1px solid black;
+  }
+  &::after {
+    content: "test";
+  }
+}
+
 /* Contact Section */
 .contact {
   background-color: rgb(46, 36, 86);
