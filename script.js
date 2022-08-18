@@ -1,3 +1,5 @@
+document.getElementById("btnClear").addEventListener("click", ClearForm);
+
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -39,4 +41,10 @@ function animateBoxes() {
   gsap.from(".techBackground", { scrollTrigger: ".midBackground", y: -200, opacity: 0, duration: 1 });
 
   gsap.from(".contactMainBox", { scrollTrigger: ".contactMainBox", y: 100, opacity: 0, duration: 1 });
+}
+
+function ClearForm() {
+  document.getElementById("formName").value = "";
+  document.getElementById("formEmail").value = "";
+  document.getElementById("formMessage").value = "";
 }

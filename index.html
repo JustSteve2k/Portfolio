@@ -114,10 +114,11 @@
         <h2>Relevant Technologies</h2>
         <div class="techBackground">
           <div class="techBox">
-            <span class="iconify" data-icon="akar-icons:html-fill"></span>
+            <span class="iconify htmlIcon" data-icon="akar-icons:html-fill" title-attribute="html"></span>
             <span class="iconify" data-icon="akar-icons:css-fill"></span>
+            <span class="iconify" data-icon="akar-icons:sass-fill"></span>
             <span class="iconify" data-icon="akar-icons:bootstrap-fill"></span>
-            <span class="iconify" data-icon="bxl:tailwind-css"></span>
+            <!--<span class="iconify" data-icon="bxl:tailwind-css"></span> -->
             <span class="iconify" data-icon="akar-icons:javascript-fill"></span>
             <span class="iconify" data-icon="akar-icons:react-fill"></span>
             <span class="iconify" data-icon="bxl:nodejs"></span>
@@ -147,15 +148,17 @@
           </div>
         </div>
         <div class="formBox">
-          <form action="">
+          <form action="https://formsubmit.co/8bf891bccfa1b0f1d044cb7aa75b2e6a" method="POST" target="_blank">
             <label for="name">Name</label>
-            <input type="text" placeholder="Your Name" />
+            <input id="formName" name="name" type="text" placeholder="Your Name" required />
             <label for="email">Email</label>
-            <input type="text" placeholder="yourEmail@email.com" />
+            <input id="formEmail" name="email" type="text" placeholder="yourEmail@email.com" required />
             <label for="message">Message</label>
-            <textarea name="message" id="" placeholder="Hows it going?"></textarea>
-            <button>Submit</button>
-            <button>Clear</button>
+            <textarea id="formMessage" name="message" placeholder="Hows it going?" required></textarea>
+            <input type="text" name="_honey" style="display: none" />
+            <input type="hidden" name="_captcha" value="false" />
+            <button id="btnSubmit" type="submit">Submit</button>
+            <button id="btnClear" type="button">Clear</button>
           </form>
         </div>
       </div>
