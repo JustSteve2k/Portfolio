@@ -1,4 +1,7 @@
 document.getElementById("btnClear").addEventListener("click", ClearForm);
+document.getElementById("return").addEventListener("click", () => {
+  Jump("home");
+});
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,4 +50,10 @@ function ClearForm() {
   document.getElementById("formName").value = "";
   document.getElementById("formEmail").value = "";
   document.getElementById("formMessage").value = "";
+}
+
+function Jump(h) {
+  var url = location.href;
+  location.href = "#" + h;
+  history.replaceState(null, null, url);
 }
