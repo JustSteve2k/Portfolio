@@ -139,8 +139,13 @@ body {
   width: 1rem;
   text-align: center;
   border-radius: 12px;
-  background-color: yellow;
+  background-color: purple;
   z-index: 3;
+}
+.return:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
 }
 
 /* About Me Section */
