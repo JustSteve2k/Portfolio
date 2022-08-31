@@ -48,7 +48,7 @@ body {
 .intro {
   position: absolute;
   top: 12rem;
-  left: 8.75rem;
+  left: 5%;
   width: 15%;
   height: 30rem;
   color: white;
@@ -58,9 +58,7 @@ body {
 
 .introSvg {
   position: absolute;
-  /* width: 30%; */
-  width: 80rem;
-  height: 40rem;
+  width: 70rem;
   top: 10rem;
   right: 5.5rem;
 }
@@ -368,15 +366,70 @@ body {
 }
 
 /* Media queries */
-
+/*
 @media only screen and (max-width: 1700px) {
   .introSvg {
     width: 70rem;
   }
 }
 
+
 @media only screen and (max-width: 1600px) {
   .introSvg {
     width: 60rem;
   }
 } ;
+*/
+
+@media only screen and (max-width: 1500px) {
+  .introSvg {
+    top: 12rem;
+    width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .leftBox {
+    width: 16rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .introSvg {
+    top: 14rem;
+    width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .intro {
+    width: 40%;
+  }
+
+  .introSvg {
+    visibility: hidden;
+  }
+
+  .leftBackground {
+    display: none;
+  }
+
+  .midBackground {
+    width: 48%;
+  }
+
+  .rightBackground {
+    width: 48%;
+  }
+
+  .iconify {
+    width: 48px;
+  }
+  .techBox {
+    width: 80%;
+  }
+  .iconContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
