@@ -58,7 +58,7 @@ body {
 
 .introSvg {
   position: absolute;
-  width: 70rem;
+  width: 80rem;
   top: 10rem;
   right: 5.5rem;
 }
@@ -93,12 +93,14 @@ body {
   height: 40rem;
   width: 50%;
   border-radius: 12px;
+  border: 1px solid red;
 }
 
 .projectRow {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  border: 1px solid blue;
 }
 
 .project {
@@ -117,15 +119,19 @@ body {
 }
 
 .projectImage {
-  width: 15rem;
+  width: 100%;
   height: 10rem;
   background-color: blue;
+  &:hover {
+    background-color: white;
+    transition: 0.5s;
+  }
 }
 
 .projectLinks {
   background-color: red;
   height: 2rem;
-  width: 15rem;
+  width: 100%;
   text-align: center;
 }
 
@@ -141,7 +147,7 @@ body {
   background-color: purple;
   color: white;
   z-index: 2;
-  box-shadow: 0px 0px 8px black;
+  box-shadow: 0px 0px 8px rgb(31, 30, 30);
 
   &:hover {
     background-color: white;
@@ -206,9 +212,6 @@ body {
   h2 {
     color: white;
     text-align: center;
-    width: 20rem;
-    padding: 0.25rem;
-    border-radius: 12px;
     margin: 6rem auto 0.25rem;
     font-size: 1rem;
   }
@@ -218,10 +221,10 @@ body {
 .techBackground {
   margin: 1rem auto;
   width: 65%;
-  height: 47rem;
   background-color: rgba(46, 36, 86, 0.6);
   border-radius: 12px;
   z-index: 2;
+  padding-bottom: 10%;
 }
 
 /*Inner box */
@@ -231,10 +234,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 60%;
+  width: 80%;
   height: 42rem;
   margin: 0 auto;
-  column-gap: 5rem;
+  column-gap: 15%;
   row-gap: 0.25rem;
   padding-top: 2.5rem;
 }
@@ -290,7 +293,7 @@ body {
   flex-direction: row;
   margin: 10rem auto;
   width: 60%;
-  height: 40rem;
+  height: 60%;
   background-color: rgb(82, 63, 152);
   border-radius: 12px;
   color: white;
@@ -352,11 +355,11 @@ body {
     border-radius: 12px;
     text-indent: 10px;
     margin-bottom: 1rem;
+    text-align: justify;
   }
 }
 
 /*Special Classes */
-
 .blue {
   color: rgb(67, 133, 210);
 }
@@ -366,20 +369,6 @@ body {
 }
 
 /* Media queries */
-/*
-@media only screen and (max-width: 1700px) {
-  .introSvg {
-    width: 70rem;
-  }
-}
-
-
-@media only screen and (max-width: 1600px) {
-  .introSvg {
-    width: 60rem;
-  }
-} ;
-*/
 
 @media only screen and (max-width: 1500px) {
   .introSvg {
@@ -394,13 +383,12 @@ body {
   }
 
   .formBox {
-    border: 1px solid black;
     input {
-      width: 20rem;
+      width: 100%;
       margin: 0 auto;
     }
     textarea {
-      width: 20rem;
+      width: 100%;
     }
   }
 }
@@ -410,12 +398,16 @@ body {
     top: 14rem;
     width: 50rem;
   }
+  .projectArea {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
   .intro {
-    width: 40%;
-    left: 10rem;
+    width: 50%;
+    left: 15%;
+    top: 10rem;
   }
 
   .introSvg {
@@ -438,7 +430,9 @@ body {
     width: 48px;
   }
   .techBox {
-    width: 80%;
+    width: 90%;
+    column-gap: 10%;
+    row-gap: 0%;
   }
   .iconContainer {
     display: flex;
@@ -448,4 +442,40 @@ body {
   .leftBox {
     display: none;
   }
+  .rightBackground h2 {
+    color: blue;
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .buttonBar {
+    width: 100%;
+    right: 0;
+    font-size: small;
+  }
+
+  .intro {
+    top: 5rem;
+    width: 60%;
+  }
+
+  .projectArea {
+    width: 70%;
+  }
+  .projectRow {
+    border: 1px solid black;
+  }
+
+  .project {
+    width: 45rem;
+    border: 1px solid yellow;
+  }
+
+  .iconify {
+    width: 36px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
 }
