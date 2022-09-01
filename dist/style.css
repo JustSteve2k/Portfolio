@@ -137,11 +137,11 @@ body {
   height: 1rem;
   width: 3rem;
   text-align: center;
-  font-weight: bold;
   border-radius: 12px;
   background-color: purple;
   color: white;
   z-index: 2;
+  box-shadow: 0px 0px 8px black;
 }
 .return:hover {
   background-color: white;
@@ -381,6 +381,16 @@ body {
   .leftBox {
     width: 16rem;
   }
+  .formBox {
+    border: 1px solid black;
+  }
+  .formBox input {
+    width: 20rem;
+    margin: 0 auto;
+  }
+  .formBox textarea {
+    width: 20rem;
+  }
 }
 @media only screen and (max-width: 1300px) {
   .introSvg {
@@ -391,6 +401,7 @@ body {
 @media only screen and (max-width: 1100px) {
   .intro {
     width: 40%;
+    left: 10rem;
   }
   .introSvg {
     visibility: hidden;
@@ -413,6 +424,9 @@ body {
   .iconContainer {
     display: flex;
     justify-content: center;
+  }
+  .leftBox {
+    display: none;
   }
 }
 
