@@ -245,6 +245,7 @@ body {
   height: 72px;
   width: 72px;
   z-index: 2;
+  border: 1px solid black;
 }
 
 .iconContainer {
@@ -252,7 +253,6 @@ body {
   width: 72px;
   height: 72px;
   float: left;
-  margin-right: 10px;
 }
 .iconContainer:hover {
   cursor: pointer;
@@ -412,10 +412,14 @@ body {
   .midBackground {
     width: 48%;
   }
+  .aboutMeBox {
+    line-height: 1.5rem;
+  }
   .rightBackground {
     width: 48%;
   }
   .iconify {
+    height: 48px;
     width: 48px;
   }
   .techBox {
@@ -426,6 +430,13 @@ body {
   .iconContainer {
     display: flex;
     justify-content: center;
+    margin-bottom: 0px;
+    height: 48px;
+    width: 48px;
+  }
+  .iconContainer div {
+    height: 1rem;
+    margin-bottom: 15px;
   }
   .leftBox {
     display: none;
@@ -450,6 +461,9 @@ body {
   }
   .iconify {
     width: 36px;
+  }
+  .techBox {
+    row-gap: 0rem;
   }
 }
 
