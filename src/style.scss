@@ -126,7 +126,9 @@ body {
 }
 
 .projectTitle {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 20%;
 }
 
@@ -144,7 +146,21 @@ body {
   background-color: red;
   height: 20%;
   width: 100%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .iconify {
+    color: white;
+    height: 36px;
+    width: 36x;
+
+    &:hover {
+      color: black;
+      transform: scale(1.2);
+      transition: 0.3s;
+    }
+  }
 }
 
 .return {
