@@ -46,7 +46,7 @@ body {
 
 .intro {
   position: absolute;
-  top: 15rem;
+  top: 18rem;
   left: 5%;
   width: 25%;
   height: 30rem;
@@ -67,7 +67,7 @@ body {
 .introSvg {
   position: absolute;
   width: 80rem;
-  top: 10rem;
+  top: 8rem;
   right: 5.5rem;
 }
 
@@ -115,6 +115,7 @@ body {
 
 .project {
   width: 25rem;
+  height: 22rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -410,7 +411,7 @@ body {
     width: 50rem;
   }
   .projectArea {
-    width: 80%;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -441,6 +442,7 @@ body {
     visibility: hidden;
   }
   .project {
+    height: 14rem;
     width: 15rem;
   }
   .leftBackground {
@@ -483,7 +485,7 @@ body {
     margin-top: 10%;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .buttonBar {
     width: 100%;
     right: 0;
@@ -493,8 +495,16 @@ body {
     top: 5rem;
     width: 60%;
   }
+  .projectArea {
+    height: 80%;
+  }
   .projectRow {
-    justify-content: end;
+    flex-direction: column;
+    height: 100%;
+  }
+  .project {
+    height: 14rem;
+    margin: 1rem auto;
   }
   .iconify {
     width: 36px;
@@ -504,14 +514,6 @@ body {
   }
 }
 @media only screen and (max-width: 425px) {
-  .projectRow {
-    flex-direction: column;
-    height: 100%;
-  }
-  .project {
-    height: 10rem;
-    margin: 1rem auto;
-  }
   .aboutMeBox {
     line-height: 0.9rem;
   }
