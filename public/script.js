@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 function animateBoxes() {
   gsap.from(".buttonBar", { x: 100, opacity: 0, duration: 1 });
   //gsap.from(".intro", { x: -100, opacity: 0, duration: 1 });
-  gsap.from(".intro .blue", { opacity: 0, duration: 1 });
+  gsap.from(".intro h1", { opacity: 0, duration: 1 });
   gsap.from(".intro p", {
     x: -100,
     opacity: 0,
