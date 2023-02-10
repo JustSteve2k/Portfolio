@@ -36,6 +36,10 @@ body {
       transform: scale(1.2);
       transition: 0.3s;
     }
+
+    &:visited {
+      color: #8a43d2;
+    }
   }
 }
 
@@ -98,13 +102,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 8rem auto;
   height: 65%;
   width: 75%;
   border-radius: 12px;
   background-color: #1e1838;
   box-shadow: 0px 0px 12px black;
-  // border: 1px solid red;
 }
 
 .projectRow {
@@ -342,6 +346,7 @@ body {
   background-color: rgb(82, 63, 152);
   border-radius: 12px;
   color: white;
+  box-shadow: 0px 0px 12px black;
 }
 
 .leftBox {
@@ -405,6 +410,7 @@ body {
 }
 
 /*Special Classes */
+
 .blue {
   color: rgb(67, 133, 210);
 }
@@ -414,6 +420,46 @@ body {
 }
 
 /* Media queries */
+
+@media only screen and (min-width: 1921px) {
+  .buttonBar {
+    top: 4rem;
+    right: 4rem;
+    width: 100rem;
+    height: 8rem;
+    font-size: 4rem;
+  }
+
+  .resumeButton {
+    font-size: 8rem;
+  }
+
+  .intro {
+    top: 30%;
+    left: 5%;
+    width: 25%;
+    height: 30rem;
+    color: white;
+    line-height: 4rem;
+    z-index: 2;
+  }
+
+  .introHeader {
+    color: rgb(67, 133, 210);
+    font-size: 6rem;
+  }
+
+  .introLine {
+    font-size: 3rem;
+  }
+
+  .introSvg {
+    position: absolute;
+    width: 70%;
+    top: 10%;
+    right: 5%;
+  }
+}
 
 @media only screen and (max-width: 1875px) {
   .introSvg {
