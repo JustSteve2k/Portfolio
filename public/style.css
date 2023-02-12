@@ -78,8 +78,8 @@ body {
 
 .introSvg {
   position: absolute;
-  width: 80rem;
-  top: 8rem;
+  width: 60rem;
+  top: 12rem;
   right: 5.5rem;
 }
 
@@ -411,58 +411,7 @@ body {
 }
 
 /* Media queries */
-@media only screen and (min-width: 1921px) {
-  .buttonBar {
-    top: 4rem;
-    right: 4rem;
-    width: 100rem;
-    height: 8rem;
-    font-size: 4rem;
-  }
-  .resumeButton {
-    font-size: 8rem;
-  }
-  .intro {
-    top: 30%;
-    left: 5%;
-    width: 25%;
-    height: 30rem;
-    color: white;
-    line-height: 4rem;
-    z-index: 2;
-  }
-  .introHeader {
-    color: rgb(67, 133, 210);
-    font-size: 6rem;
-  }
-  .introLine {
-    font-size: 3rem;
-  }
-  .introSvg {
-    position: absolute;
-    width: 70%;
-    top: 10%;
-    right: 5%;
-  }
-}
-@media only screen and (max-width: 1875px) {
-  .introSvg {
-    width: 65rem;
-  }
-}
-@media only screen and (max-width: 1650px) {
-  .intro {
-    width: 30%;
-  }
-  .introSvg {
-    top: 12rem;
-    width: 50rem;
-  }
-  .projectArea {
-    width: 90%;
-  }
-}
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1440px) {
   .introHeader {
     line-height: 3rem;
   }
