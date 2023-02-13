@@ -401,6 +401,11 @@ body {
   text-align: justify;
 }
 
+.formMessage {
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
 /*Special Classes */
 .blue {
   color: rgb(67, 133, 210);
