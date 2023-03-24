@@ -64,8 +64,8 @@ body {
   color: white;
   line-height: 2rem;
   z-index: 2;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
+  /* background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px; */
 }
 
 .introHeader {
