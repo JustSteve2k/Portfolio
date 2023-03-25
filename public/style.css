@@ -64,14 +64,12 @@ body {
   color: white;
   line-height: 2rem;
   z-index: 2;
-  /* background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px; */
 }
 
 .introHeader {
   color: rgb(67, 133, 210);
   font-size: 4rem;
-  line-height: 3rem;
+  line-height: 4rem;
 }
 
 .introLine {
